@@ -2,7 +2,7 @@ class Mytsapp < Formula
   desc "Tiny CLI in TypeScript"
   homepage "https://github.com/taisiia-sokolova/mytsapp-cli"
   url "https://github.com/taisiia-sokolova/mytsapp-cli/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "580b6085bfc2aaa721ecc67e424dbf9d97769452ed05f825be16eee826c4f1f7"
+  sha256 "522c46d22546e91760e850d6178f359885ec3f4ab95f4bab8c76334f1e5a9a7c"
   license "MIT"
 
   depends_on "node@20" => :build
