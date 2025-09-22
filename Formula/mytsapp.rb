@@ -8,8 +8,6 @@ class Mytsapp < Formula
   depends_on "node@20" => :build
 
   def install
-    system "npm", "ci"
-    system "npx", "tsc"  # ← вместо npm run build
     system "npm", "install", *std_npm_args(prefix: libexec)
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
