@@ -9,7 +9,7 @@ class Mytsapp < Formula
 
   def install
     system "npm", "ci"
-    system "npm", "run", "build"
+    system "npx", "tsc"  # ← вместо npm run build
     system "npm", "install", *std_npm_args(prefix: libexec)
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
